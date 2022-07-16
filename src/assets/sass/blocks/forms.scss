@@ -1,5 +1,6 @@
 .forms-one {
 	position: relative;
+	z-index: 1;
 }
 
 .forms-back {
@@ -14,15 +15,34 @@
 .form {
 	background: #9EC419;
 	border-radius: 12px;
+
+}
+
+.form-box {
+	max-width: 1553px;
+	margin: 0 auto;
+	top: -20px;
+	position: relative;
+
+	z-index: 1;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 94%;
+		height: 100px;
+		background: #6D8909;
+		border-radius: 12px;
+		left: 50%;
+		bottom: -11px;
+		z-index: -2;
+		box-shadow: 3px 9px 12px rgba(109, 137, 9, .7);
+		transform: translateX(-50%);
+	}
 }
 
 .form-1 {
-	max-width: 1553px;
-	padding: 44px 68px;
-	margin: 0 auto;
-	position: relative;
-	top: -20px;
-
+	padding: 44px 68px 39px 68px;
 }
 
 .form-title {
@@ -99,6 +119,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-bottom: 47px;
 }
 
 .form-row-coll {
@@ -125,4 +146,44 @@
 
 	color: #7EA100;
 
+}
+
+.form-row-3 {
+	display: flex;
+	align-items: center;
+
+}
+
+.form-btn {
+	background: #7EA200;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 18px;
+	color: #FFFFFF;
+
+	cursor: pointer;
+	width: 32%;
+	height: 84px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.form-btn-svg {
+	margin-left: 35px;
+}
+
+.form-text-2 {
+	width: 26%;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 17px;
+	color: #FFFFFF;
+	margin-left: 26px;
 }
