@@ -51,7 +51,9 @@ input.error {
 		max-width: 1885px;
 	}
 
-
+	.job-container {
+		max-width: 1458px;
+	}
 }
 
 /* blocks */
@@ -59,3 +61,6 @@ input.error {
 @import "../sass/blocks/main.scss";
 @import "../sass/blocks/forms.scss";
 @import "../sass/blocks/slider-tooltips.scss";
+@import "../sass/blocks/services.scss";
+@import "../sass/blocks/job.scss";
+@import "../sass/blocks/kinds.scss";

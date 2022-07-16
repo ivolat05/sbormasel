@@ -1,0 +1,92 @@
+.kinds {
+	background: #F5F5F5;
+}
+
+.kinds-padding {
+	padding-top: 127px;
+	padding-bottom: 163px;
+}
+
+.kinds-subtitle {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #C4C4C4;
+	padding-bottom: 11px;
+}
+
+.kinds-title {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 40px;
+	color: #252525;
+
+	padding-bottom: 15px;
+
+	span {
+		display: block;
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 40px;
+		color: #9EC419;
+	}
+}
+
+.kinds-text {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 20px;
+	color: #252525;
+
+	padding-bottom: 51px;
+}
+
+.kinds-box-link {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 40px;
+	color: #252525;
+	transition: .4s all;
+	display: block;
+
+	&:hover {
+		text-decoration-line: underline;
+		color: #9EC419;
+	}
+}
+
+.kinds-wrapp {
+	display: flex;
+}
+
+.kinds-box {
+	display: flex;
+}
+
+.kinds-box-col {
+	width: 33.33%;
+}
+
+.kinds-coll {
+	width: 25%;
+	padding-top: 6px;
+	padding-left: 5px;
+}
+
+.kinds-coll-2 {
+	width: 75%;
+	padding-left: 8px;
+}
+
+.kinds-link {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	text-decoration-line: underline;
+
+	color: #9EC419;
+	display: block;
+	padding-left: 4px;
+}

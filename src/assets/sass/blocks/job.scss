@@ -1,0 +1,101 @@
+.job {
+	padding-top: 160px;
+	padding-bottom: 80px;
+}
+
+.job-subttitle {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 44px;
+
+	color: #9EC419;
+
+}
+
+.job-title {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 44px;
+	padding-bottom: 30px;
+}
+
+.job-link {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	text-decoration-line: underline;
+
+	color: #9EC419;
+	padding-left: 10px;
+	display: block;
+}
+
+.job-slaider {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.job-box {
+	width: 340px;
+	min-height: 255px;
+	border: 13px solid rgba(230, 240, 232, 0.47);
+	margin-bottom: 21px;
+	padding: 28px 60px;
+
+}
+
+.job-box-btn {
+	display: none;
+}
+
+.job-btn {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	background: none;
+	outline: none;
+	cursor: pointer;
+	border: none;
+}
+
+.job-btn-next {
+	left: auto;
+	right: 0;
+}
+
+.job-box-title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 23px;
+	color: #9EC419;
+	padding-bottom: 10px;
+}
+
+.job-box-text {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 23px;
+	color: #252525;
+
+}
+
+.job-wrapp {
+	display: flex;
+	justify-content: space-between;
+}
+
+.job-coll {
+	width: 25%;
+	padding-top: 18px;
+}
+
+.job-coll-2 {
+	width: 75%;
+
+}
+
+.job-img {
+	margin-bottom: 20px;
+}
