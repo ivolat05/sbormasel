@@ -54,6 +54,10 @@ input.error {
 	.job-container {
 		max-width: 1458px;
 	}
+
+	.repres-container {
+		max-width: 1486px;
+	}
 }
 
 /* blocks */
@@ -64,3 +68,4 @@ input.error {
 @import "../sass/blocks/services.scss";
 @import "../sass/blocks/job.scss";
 @import "../sass/blocks/kinds.scss";
+@import '../sass/blocks/repres.scss';
