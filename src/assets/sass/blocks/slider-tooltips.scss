@@ -1,0 +1,64 @@
+.noUi-connect {
+	background: #7EA007;
+	border-radius: 6px;
+
+}
+
+.noUi-base {
+	border-radius: 6px;
+	height: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.noUi-horizontal {
+	height: 4px;
+
+}
+
+.noUi-target {
+	border: none;
+	border-radius: 0;
+}
+
+.noUi-tooltip {
+	background: #FFFFFF;
+	border-radius: 6px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	color: #7EA007;
+	width: 86px;
+	height: 36px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: -49px;
+
+	&::after {
+		content: url('../../assets/img/noSlaid.png');
+		position: absolute;
+
+		bottom: -9px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.noUi-horizontal .noUi-handle {
+	width: 19px;
+	height: 19px;
+	border-radius: 19px;
+	border: 5px solid #7EA007;
+	background: #fff;
+	top: 50%;
+	transform: translateY(-25%);
+
+	&::before {
+		background: none;
+	}
+
+	&::after {
+		background: none;
+	}
+}

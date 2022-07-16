@@ -32,14 +32,14 @@ var path = {
 		html: "src/*.html",
 		js: "src/assets/js/*.js",
 		css: "src/assets/sass/style.scss",
-		images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,xml,webmanifest}",
+		images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,xml,webmanifest,webp}",
 		fonts: "src/assets/font/*.{ttf,woff,woff2,eot,svg}"
 	},
 	watch: {
 		html: "src/**/*.html",
 		js: "src/assets/js/**/*.js",
 		css: "src/assets/sass/**/*.scss",
-		images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,xml,webmanifest}",
+		images: "src/assets/img/**/*.{jpg,png,svg,gif,ico,xml,webmanifest,webp}",
 		fonts: "src/assets/font/*.{ttf,woff,woff2,eot,svg}"
 	},
 	clean: "./dist"
