@@ -65,7 +65,7 @@ $(function () {
 		});
 	}
 	nouSlider('slider-tooltips', 'slider-tooltips-1');
-	nouSlider('slider-tooltips-2', 'slider-tooltips-2');
+	nouSlider('slider-tooltips-2', 'slider-tooltips-input-2');
 	// валидация форм
 	// кол-во символов ввода телефона
 	$.validator.addMethod("minlenghtphone", function (value, element) {
