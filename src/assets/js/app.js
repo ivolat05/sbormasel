@@ -5,6 +5,37 @@
 //= components/validation.js
 //= components/slick.min.js
 $(function () {
+	// скролл
+	$(".scroll-link").click(function () {
+		var target = $(this).attr('href');
+		$('html, body').animate({
+			scrollTop: $(target).offset().top - 100
+		}, 1500);
+		return false;
+	});
+
+
+	function buttonFixed() {
+		let buttonPosition = document.querySelector('.page-btn');
+		if (buttonPosition) {
+			let offsetHeader = document.querySelector('.header').offsetHeight;
+			let offsetMain = document.querySelector('.main').offsetHeight;
+			let summHead = offsetHeader + offsetMain;
+
+			window.addEventListener('scroll', () => {
+				let scrollDistanse = window.scrollY;
+				if (scrollDistanse > summHead) {
+					buttonPosition.style.opacity = '1';
+					buttonPosition.style.zIndex = '3';
+				} else {
+					buttonPosition.style.opacity = '0	';
+					buttonPosition.style.zIndex = '-4';
+				}
+			})
+		}
+	}
+
+	buttonFixed();
 	// ползунок
 	// idLine - id div который отоброжает ползунок
 	// idHideInput - id скрытый input для передачи заначения ползунка

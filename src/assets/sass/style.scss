@@ -35,6 +35,20 @@ input.error {
 	border-color: red;
 }
 
+.page-btn {
+	background: #9EC419;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+	height: 73px;
+	width: 73px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 25%;
+	right: 2%;
+	z-index: -4;
+	opacity: 0;
+}
 
 /* bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
@@ -48,7 +62,8 @@ input.error {
 		max-width: 1420px;
 	}
 
-	.header-container {
+	.header-container,
+	.footer-container {
 		max-width: 1885px;
 	}
 
