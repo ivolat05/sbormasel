@@ -1,0 +1,66 @@
+.company-padding {
+	padding-top: 106px;
+	padding-bottom: 50px;
+}
+
+.company-coll {
+	width: 56%;
+	display: flex;
+	align-items: start;
+	justify-content: start;
+}
+
+.conpany-form {
+	width: 41%;
+	position: relative;
+}
+
+.company-title {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 43px;
+	color: #252525;
+	padding-bottom: 39px;
+
+	span {
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 43px;
+
+		color: #9EC419;
+		display: block;
+	}
+}
+
+.company-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px;
+	color: #252525;
+	padding-bottom: 22px;
+}
+
+.company-link {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	padding-top: 7px;
+
+	color: #9EC419;
+}
+
+.company-svg {
+	margin-left: 25px;
+}
+
+.company-page {
+	padding-left: 58px;
+}
+
+.company-wrap {
+	display: flex;
+	justify-content: space-between;
+}

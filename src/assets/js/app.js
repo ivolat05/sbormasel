@@ -3,6 +3,7 @@
 //= components/jquery.inputmask.min.js
 //= components/aos.js
 //= components/validation.js
+//= components/slick.min.js
 $(function () {
 	// ползунок
 	// idLine - id div который отоброжает ползунок
@@ -33,7 +34,7 @@ $(function () {
 		});
 	}
 	nouSlider('slider-tooltips', 'slider-tooltips-1');
-
+	nouSlider('slider-tooltips-2', 'slider-tooltips-2');
 	// валидация форм
 	// кол-во символов ввода телефона
 	$.validator.addMethod("minlenghtphone", function (value, element) {
@@ -64,4 +65,47 @@ $(function () {
 	}
 
 	$('.mask-tell').inputmask("+375 (99)999-99-99");
+
+
+	// cslaider
+	$(".nlaider").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: false,
+		infinite: true,
+		arrows: true,
+
+		nextArrow: $(".block__slick-next"),
+		prevArrow: $(".block__slick-prev"),
+
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					dots: false
+				}
+			}
+		]
+	});
+
+	$(".news-slaider").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: true,
+		infinite: true,
+		arrows: false,
+		rows: 0,
+		responsive: [
+			{
+				breakpoint: 100,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					dots: false
+				}
+			}
+		]
+	});
 })

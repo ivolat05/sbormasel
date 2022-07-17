@@ -1,0 +1,51 @@
+.partners-padding {
+	padding-top: 73px;
+	padding-bottom: 80px;
+}
+
+.partners-title {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 43px;
+
+	color: #252525;
+	padding-bottom: 26px;
+}
+
+.partners-text {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #C4C4C4;
+
+}
+
+.partners-wrapp {
+	display: flex;
+	justify-content: space-between;
+}
+
+.partners-box {
+	width: 67%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.partners-coll {
+	width: 27%;
+}
+
+
+.partners-box-img {
+	width: 25%;
+	height: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	margin-bottom: 30px;
+}
+
+.partners-box-center {
+	align-items: center;
+}

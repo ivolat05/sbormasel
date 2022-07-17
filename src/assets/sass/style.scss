@@ -2,6 +2,7 @@
 @import "../sass/vendor/reset.scss";
 @import "../sass/vendor/aos.scss";
 @import "../sass/vendor/nouislider.min.scss";
+@import "../sass/vendor/slick.scss";
 /* Default style */
 
 *,
@@ -58,6 +59,18 @@ input.error {
 	.repres-container {
 		max-width: 1486px;
 	}
+
+	.company-container {
+		max-width: 1732px;
+	}
+
+	.partners-container {
+		max-width: 1439px;
+	}
+
+	.news-container {
+		max-width: 1450px;
+	}
 }
 
 /* blocks */
@@ -70,3 +83,7 @@ input.error {
 @import "../sass/blocks/kinds.scss";
 @import '../sass/blocks/repres.scss';
 @import "../sass/blocks/video.scss";
+@import "../sass/blocks/company.scss";
+@import "../sass/blocks/partners.scss";
+@import "../sass/blocks/news.scss";
+@import "../sass/blocks/footer.scss";
