@@ -78,11 +78,7 @@ input.error {
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/containers";
 
-@media(min-width:1580px) {
-	.company-container {
-		max-width: 1732px;
-	}
-}
+
 
 @media(min-width:1400px) {
 	.container {
@@ -118,6 +114,12 @@ input.error {
 @media(min-width:992px) {
 	.company-container {
 		max-width: 100%;
+	}
+}
+
+@media(min-width:1580px) {
+	.company-container {
+		max-width: 1732px;
 	}
 }
 
