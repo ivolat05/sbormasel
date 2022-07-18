@@ -303,4 +303,59 @@ $(function () {
 	}
 
 	menu();
+	// video
+	function video(btnStart) {
+		let btn = document.querySelectorAll(`${btnStart}`);
+		let videoStop = document.querySelectorAll('.video-close');
+		let video = document.querySelectorAll('.video-container');
+		if (btn) {
+			btn.forEach(item => {
+				item.addEventListener('click', () => {
+					let videoId = item.getAttribute('data-video');
+					let videoPlay = document.querySelector(videoId);
+					videoPlay.play();
+				})
+			})
+			videoStop.forEach(item => {
+				item.addEventListener('click', () => {
+					video.forEach(item => {
+						item.pause();
+						item.currentTime = 0;
+					})
+
+				})
+			})
+		}
+	}
+	video('.video-start')
+
+	$('.video-start').magnificPopup({
+		type: 'inline',
+		mainClass: 'mfp-fade',
+
+		callbacks: {
+			close: function () {
+				let video = document.querySelectorAll('.video-container');
+				video.forEach(item => {
+					item.pause();
+					item.currentTime = 0;
+				})
+			}
+		}
+	});
+	//popup close
+	function closePopup(closeBtn) {
+		let popupClose = document.querySelectorAll(`.${closeBtn}`);
+		if (popupClose) {
+			popupClose.forEach((item) => {
+				item.addEventListener('click', () => {
+					$.magnificPopup.close();
+				})
+			})
+		}
+
+
+	}
+
+	closePopup('video-close');
 })
