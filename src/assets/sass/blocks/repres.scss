@@ -68,10 +68,26 @@
 	line-height: 18px;
 	color: #FFFFFF;
 	margin-left: 5px;
+	transition: .4s;
+
+	&:hover {
+		background: #fff;
+		color: #9EC419;
+
+		.repres-svg {
+			path {
+				fill: #9EC419;
+			}
+		}
+	}
 }
 
 .repres-svg {
 	margin-right: 29px;
+
+	path {
+		transition: .4s;
+	}
 }
 
 

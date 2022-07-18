@@ -180,10 +180,22 @@
 	border: none;
 	outline: none;
 	cursor: pointer;
+	transition: .4s all;
+
+	&:hover {
+		background: #6b8803;
+
+		.form-btn-svg {
+			left: 15px;
+		}
+	}
 }
 
 .form-btn-svg {
 	margin-left: 35px;
+	position: relative;
+	left: 0;
+	transition: .4s;
 }
 
 .form-text-2 {

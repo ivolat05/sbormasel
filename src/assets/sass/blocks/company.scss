@@ -50,10 +50,23 @@
 	padding-top: 7px;
 
 	color: #9EC419;
+
+	&:hover {
+		text-decoration: underline;
+
+		.company-svg {
+
+			left: 15px;
+			transition: .4s;
+		}
+	}
 }
 
 .company-svg {
 	margin-left: 25px;
+	transition: .4s;
+	position: relative;
+	top: 0;
 }
 
 .company-page {
