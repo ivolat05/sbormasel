@@ -33,14 +33,15 @@
 .job-slaider {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: start;
+	gap: 20px;
 }
 
 .job-box {
 	width: 340px;
 	min-height: 255px;
 	border: 13px solid rgba(230, 240, 232, 0.47);
-	margin-bottom: 21px;
+
 	padding: 28px 60px;
 
 }

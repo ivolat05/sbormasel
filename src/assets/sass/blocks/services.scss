@@ -5,9 +5,11 @@
 }
 
 .services-box-slider {
-	display: flex;
-	justify-content: space-between;
-	align-items: start;
+	overflow: hidden;
+
+	.slick-track {
+		min-width: 100vw;
+	}
 }
 
 .services-box {
@@ -21,12 +23,12 @@
 	flex-direction: column;
 }
 
-.services-box-center {
+.services-box-background {
 	background: #F0F0F0;
 }
 
 .services-box-btn {
-	display: none;
+	display: block;
 }
 
 .services-btn {
@@ -38,6 +40,7 @@
 	outline: none;
 	cursor: pointer;
 	border: none;
+	z-index: 2;
 }
 
 .services-btn-next {
@@ -54,6 +57,7 @@
 	left: 50%;
 	top: 97px;
 	transform: translateX(-50%);
+	z-index: 2;
 
 	span {
 		font-weight: 600;
