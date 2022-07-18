@@ -4,6 +4,7 @@
 //= components/aos.js
 //= components/validation.js
 //= components/slick.min.js
+//= components/jquery.magnific-popup.min.js
 $(function () {
 	// скролл
 	$(".scroll-link").click(function () {
@@ -13,7 +14,18 @@ $(function () {
 		}, 1500);
 		return false;
 	});
-
+	// modal
+	$('.gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		mainClass: 'mfp-fade',
+		tLoading: 'Загрузка изоброжения #%curr%...',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+		}
+	});
 
 	function buttonFixed() {
 		let buttonPosition = document.querySelector('.page-btn');
@@ -41,28 +53,30 @@ $(function () {
 	// idHideInput - id скрытый input для передачи заначения ползунка
 	function nouSlider(idLine, idHideInput) {
 		let tooltipSlider = document.getElementById(`${idLine}`);
-		noUiSlider.create(tooltipSlider, {
-			start: 1000,
-			tooltips: true,
-			format: {
-				from: function (value) {
-					return parseInt(value);
+		if (tooltipSlider) {
+			noUiSlider.create(tooltipSlider, {
+				start: 1000,
+				tooltips: true,
+				format: {
+					from: function (value) {
+						return parseInt(value);
+					},
+					to: function (value) {
+						return parseInt(value);
+					}
 				},
-				to: function (value) {
-					return parseInt(value);
+				connect: 'lower',
+				range: {
+					'min': 100,
+					'max': 10000
 				}
-			},
-			connect: 'lower',
-			range: {
-				'min': 100,
-				'max': 10000
-			}
-		});
-		// передача занчение ползунка скрытому input
-		tooltipSlider.noUiSlider.on('update', function (values, handle) {
-			let inputHide = document.getElementById(`${idHideInput}`);
-			inputHide.value = Math.round(values[handle]);
-		});
+			});
+			// передача занчение ползунка скрытому input
+			tooltipSlider.noUiSlider.on('update', function (values, handle) {
+				let inputHide = document.getElementById(`${idHideInput}`);
+				inputHide.value = Math.round(values[handle]);
+			});
+		}
 	}
 	nouSlider('slider-tooltips', 'slider-tooltips-1');
 	nouSlider('slider-tooltips-2', 'slider-tooltips-input-2');
@@ -139,4 +153,132 @@ $(function () {
 			}
 		]
 	});
+
+	if (window.innerWidth <= 992) {
+		$(".services-box-slider").slick({
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			dots: false,
+			infinite: true,
+			arrows: true,
+			nextArrow: $(".services-btn-next"),
+			prevArrow: $(".services-btn-prev"),
+			responsive: [
+				{
+					breakpoint: 660,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+
+	}
+	// catalog slaider
+	window.addEventListener("resize", function () {
+		if (window.innerWidth <= 992) {
+			$(".services-box-slider").not('.slick-initialized').slick({
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				dots: false,
+				infinite: true,
+				arrows: true,
+
+				nextArrow: $(".services-btn-next"),
+				prevArrow: $(".services-btn-prev"),
+				responsive: [
+					{
+						breakpoint: 660,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+		} else {
+			$('.services-box-slider').filter('.slick-initialized').slick('unslick');
+		}
+	});
+
+	if (window.innerWidth <= 992) {
+		$(".job-slaider").slick({
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			dots: false,
+			infinite: true,
+			arrows: true,
+			rows: 0,
+			nextArrow: $(".job-btn-next"),
+			prevArrow: $(".job-btn-prev"),
+			responsive: [
+				{
+					breakpoint: 660,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+
+	}
+	// catalog slaider
+	window.addEventListener("resize", function () {
+		if (window.innerWidth <= 992) {
+			$(".job-slaider").not('.slick-initialized').slick({
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				dots: false,
+				infinite: true,
+				arrows: true,
+				rows: 0,
+				nextArrow: $(".job-btn-next"),
+				prevArrow: $(".job-btn-prev"),
+				responsive: [
+					{
+						breakpoint: 660,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+		} else {
+			$('.job-slaider').filter('.slick-initialized').slick('unslick');
+		}
+	});
+
+	//menu
+	function menu() {
+		let body = document.querySelector('body');
+		let fonBack = document.querySelector('.fon');
+		let menuOpenBtn = document.querySelector('.header-menu-open');
+		let menuBox = document.querySelector('.header-nav');
+		let menuBtnClose = document.querySelectorAll('.--close');
+		if (menuBtnClose && menuBox && menuOpenBtn && fonBack) {
+			menuOpenBtn.addEventListener('click', () => {
+				body.classList.add('stop');
+				menuBox.classList.add('active');
+				fonBack.classList.add('active');
+			})
+			fonBack.addEventListener('click', () => {
+				body.classList.remove('stop');
+				menuBox.classList.remove('active');
+				fonBack.classList.remove('active');
+			})
+			menuBtnClose.forEach(item => {
+				item.addEventListener('click', () => {
+					body.classList.remove('stop');
+					menuBox.classList.remove('active');
+					fonBack.classList.remove('active');
+				})
+			})
+
+		}
+	}
+
+	menu();
 })

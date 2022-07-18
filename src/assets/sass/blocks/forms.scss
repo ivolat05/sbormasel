@@ -110,8 +110,16 @@
 	font-size: 15px;
 	line-height: 17px;
 	display: flex;
-	align-items: center;
 	color: #FFFFFF;
+	flex-direction: column;
+
+	span {
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 17px;
+
+		color: #FFFFFF;
+	}
 }
 
 .form-row-2 {

@@ -74,10 +74,6 @@
 	margin-right: 29px;
 }
 
-.repres-wrapp {
-	display: flex;
-	justify-content: space-between;
-}
 
 .repres-contact-body {
 	display: flex;
@@ -90,20 +86,43 @@
 	margin-bottom: 40px;
 }
 
-.repres-coll {
-	width: 51%;
+.repres-head {
 	padding-top: 6px;
 	padding-left: 17px;
+
+}
+
+.repres-body {
+	padding-left: 17px;
+
+
+}
+
+.repres-wrapp {
+	display: grid;
+	grid-template-columns: 51% 49%;
+	grid-template-rows: minmax(32%, 100%);
 }
 
 .repres-img-box {
-	width: 49%;
+	left: -85px;
 	position: relative;
+	width: 100%;
+
+}
+
+.repres-img-wrapp {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column-start: 2;
+
 }
 
 .repres-img {
-	position: relative;
-	left: -85px;
+	display: block;
 }
 
 .repres-marker {
@@ -120,7 +139,7 @@
 
 	height: 16px;
 	position: absolute;
-	left: -4%;
+	left: 8%;
 	bottom: 22%;
 	display: flex;
 	align-items: center;
@@ -130,32 +149,40 @@
 	line-height: 18px;
 	color: #7EA100;
 
+
+}
+
+.repres-marker-city {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 18px;
+	color: #7EA100;
 }
 
 .repres-box-marker-2 {
-	left: -3%;
+	left: 9%;
 	bottom: 52%;
 }
 
 .repres-box-marker-3 {
-	left: 37%;
+	left: 50%;
 	bottom: 54%;
 }
 
 .repres-box-marker-4 {
-	right: 17%;
+	right: 5%;
 	left: auto;
 	bottom: 53%;
 }
 
 .repres-box-marker-5 {
-	right: 24%;
+	right: 12%;
 	left: auto;
 	bottom: 25%;
 }
 
 .repres-box-marker-6 {
-	right: 33%;
+	right: 21%;
 	left: auto;
 	top: 9%;
 }

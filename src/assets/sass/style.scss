@@ -3,6 +3,7 @@
 @import "../sass/vendor/aos.scss";
 @import "../sass/vendor/nouislider.min.scss";
 @import "../sass/vendor/slick.scss";
+@import "../sass/vendor/magnific-popup.scss";
 /* Default style */
 
 *,
@@ -50,12 +51,38 @@ input.error {
 	opacity: 0;
 }
 
+.fon {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 1);
+	opacity: 0;
+	z-index: -44;
+}
+
+.fon.active {
+	opacity: .75;
+	z-index: 4;
+}
+
+.stop {
+	overflow: hidden;
+}
+
+
 /* bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/containers";
 
+@media(min-width:1580px) {
+	.company-container {
+		max-width: 1732px;
+	}
+}
 
 @media(min-width:1400px) {
 	.container {
@@ -76,7 +103,7 @@ input.error {
 	}
 
 	.company-container {
-		max-width: 1732px;
+		max-width: 100%;
 	}
 
 	.partners-container {
@@ -85,6 +112,12 @@ input.error {
 
 	.news-container {
 		max-width: 1450px;
+	}
+}
+
+@media(min-width:992px) {
+	.company-container {
+		max-width: 100%;
 	}
 }
 
@@ -102,3 +135,4 @@ input.error {
 @import "../sass/blocks/partners.scss";
 @import "../sass/blocks/news.scss";
 @import "../sass/blocks/footer.scss";
+@import "../sass/blocks/adaptive.scss";

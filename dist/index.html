@@ -40,6 +40,14 @@
 				</div>
 		
 				<nav class="header-nav">
+					<button class="header-close --close">
+						<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M24 24L2 2" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+							</path>
+							<path d="M2 24L24 2" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+							</path>
+						</svg>
+					</button>
 					<ul class="header-nav-list">
 						<li class="header-list-inner">
 							<a href="#" class="header-list-link --active">
@@ -66,6 +74,12 @@
 								Контакты
 							</a>
 						</li>
+						<li class="header-list-inner">
+							<a href="mailto:info@sbormasel.by" class="header-mail-mob">
+								info@sbormasel.by
+							</a>
+						</li>
+		
 					</ul>
 				</nav>
 				<div class="header-contact">
@@ -86,6 +100,16 @@
 					<a href="#" class="header-mess">
 						<img src="./assets/img/viber.svg" alt="" class="header-mess-img">
 					</a>
+					<button class="header-menu-open">
+						<svg class="header-menu-open-svg" width="31" height="21" viewBox="0 0 31 21" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.8">
+								<path d="M0 0H31V3.5H0V0Z" fill="black" />
+								<path d="M0 8.75H31V12.25H0V8.75Z" fill="black" />
+								<path d="M0 17.5H31V21H0V17.5Z" fill="black" />
+							</g>
+						</svg>
+					</button>
 				</div>
 			</div>
 		</header>
@@ -129,31 +153,33 @@
 		</main>
 		<section class="forms-one">
 			<div class="forms-back"></div>
-			<div class="form-box">
+			<div class="form-box ">
 				<form id="form-1" action="/" class="form form-1">
-					<h3 class="form-title">
+					<h3 class="form-title form-title-one">
 						Сдать отработанное масло
 					</h3>
-					<p class="form-text">
+					<p class="form-text form-text-one">
 						Наши специалисты подберут для вас наиболее выгодные условия
 					</p>
-					<div class="form-row">
-						<input type="text" name="name" class="form-input" placeholder="Ваше Имя*">
-						<input type="text" name="phone" class="form-input mask-tell" placeholder="Контактный телефон*">
-						<input type="text" name="city" class="form-input" placeholder="Город">
+					<div class="form-row form-row-one ">
+						<input type="text" name="name" class="form-input form-input-one" placeholder="Ваше Имя*">
+						<input type="text" name="phone" class="form-input  form-input-one mask-tell"
+							placeholder="Контактный телефон*">
+						<input type="text" name="city" class="form-input  form-input-one" placeholder="Город">
 					</div>
-					<div class="form-row-2">
-						<div class="form-row-coll">
-							<h4 class="form-subtitle">
+					<div class="form-row-2 form-row-2-one">
+						<div class="form-row-coll form-row-coll-one">
+							<h4 class="form-subtitle form-subtitle-one">
 								Объем, литр
 							</h4>
-							<p class="form-subtext">
-								Укажите желаемое количество литров вывозимого <br> отработанного масла для более точного
+							<p class="form-subtext form-subtext-one">
+								<span>
+									Укажите желаемое количество литров вывозимого</span> отработанного масла для более точного
 								просчета
 								стоимости
 							</p>
 						</div>
-						<div class="form-row-line">
+						<div class="form-row-line form-row-line-one">
 							<div id="slider-tooltips" class="slider-tooltips"></div>
 							<input id="slider-tooltips-1" type="hidden" class="slider-tooltips-input" value="1000">
 							<div class="form-line-row">
@@ -166,8 +192,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="form-row-3">
-						<button type="submit" class="form-btn">
+					<div class="form-row-3 form-row-3-one">
+						<button type="submit" class="form-btn form-btn-one">
 							Отправить
 							<svg class="form-btn-svg" width="70" height="16" viewBox="0 0 70 16" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
@@ -177,7 +203,7 @@
 							</svg>
 		
 						</button>
-						<p class="form-text-2">
+						<p class="form-text-2 form-text-2-one">
 							Нажимая на кнопку "Отправить", вы даете согласие
 							на обработку персональных данных
 						</p>
@@ -215,7 +241,7 @@
 				</div>
 				<div class="services-box-slider">
 					<div class="services-box">
-						<img src="./assets/img/services/services-1.svg" alt="" class="services-img">
+						<img src="./assets/img/services/services-1.svg" alt="" class="services-img services-img-1">
 						<h4 class="services-box-title">
 							Сбор
 						</h4>
@@ -224,7 +250,7 @@
 						</p>
 					</div>
 					<div class="services-box services-box-center">
-						<img src="./assets/img/services/services-2.svg" alt="" class="services-img">
+						<img src="./assets/img/services/services-2.svg" alt="" class="services-img services-img-2">
 						<h4 class="services-box-title">
 							Транспортировка
 						</h4>
@@ -365,6 +391,10 @@
 								отработанных масел
 							</span>
 						</h3>
+						<a href="#" class="kinds-link kinds-link-mob">
+							Условия приёма<br>
+							отработанных масел и нефтепродуктов
+						</a>
 						<p class="kinds-text">
 							Мы осуществляем сбор отработанных масел по всей территории Республики Беларусь
 						</p>
@@ -411,7 +441,7 @@
 		<section class="repres repres-padding">
 			<div class="container repres-container">
 				<div class="repres-wrapp">
-					<div class="repres-coll">
+					<div class="repres-head">
 						<h3 class="repres-title">
 							<span>
 								Представители
@@ -424,6 +454,90 @@
 							сбора, пункты приема у населения, а также представительства в каждой области.
 		
 						</p>
+					</div>
+					<div class="repres-img-wrapp">
+						<div class="repres-img-box">
+							<img src="./assets/img/repres-map.webp" alt="" class="repres-img">
+							<div class="repres-box-marker repres-box-marker-1">
+								<a href="tel:375173775000" class="repres-marker-link"> <span>
+										+375 (17)377-50-00
+									</span></a>
+								<div class="repres-marker "></div>
+								<span class="repres-marker-city">
+									Брест
+								</span>
+		
+							</div>
+		
+							<div class="repres-box-marker repres-box-marker-2">
+								<a href="tel:375173775000" class="repres-marker-link"> <span>
+										+375 (17)377-50-00
+									</span></a>
+								<div class="repres-marker "></div>
+		
+								<span class="repres-marker-city">
+									Гродно
+								</span>
+							</div>
+		
+							<div class="repres-box-marker  repres-box-marker-3">
+								<a href="tel:375173775000" class="repres-marker-link"> <span>
+										+375 (17)377-50-00
+									</span></a>
+								<div class="repres-marker "></div>
+		
+								<span class="repres-marker-city">
+									Минск
+								</span>
+							</div>
+		
+							<div class="repres-box-marker --active  repres-box-marker-4">
+								<a href="tel:375173775000"
+									class="repres-marker-link repres-box-marker-position-2 repres-marker-link-right">
+									<span>
+										+375 (17)377-50-00
+									</span>
+								</a>
+								<div class="repres-marker "></div>
+		
+								<span class="repres-marker-city">
+									Могилев
+								</span>
+							</div>
+		
+							<div class="repres-box-marker  repres-box-marker-5">
+		
+								<span class="repres-marker-city">
+									Гомель
+								</span>
+								<a href="tel:375173775000"
+									class="repres-marker-link repres-box-marker-position repres-marker-link-right ">
+									<span>
+										+375 (17)377-50-00
+									</span>
+								</a>
+								<div class="repres-marker "></div>
+							</div>
+		
+							<div class="repres-box-marker  repres-box-marker-6 ">
+		
+								<span class="repres-marker-city">
+									Витебск
+								</span>
+								<a href="tel:375173775000"
+									class="repres-marker-link repres-box-marker-position repres-marker-link-right">
+									<span>
+										+375 (17)377-50-00
+									</span>
+		
+								</a>
+								<div class="repres-marker "></div>
+		
+							</div>
+						</div>
+					</div>
+		
+					<div class="repres-body">
 						<div class="repres-contact">
 							<div class="repres-contact-box">
 								<h4 class="repres-city">
@@ -528,68 +642,8 @@
 							Смотреть на карте
 						</a>
 					</div>
-					<div class="repres-img-box">
-						<img src="./assets/img/repres-map.webp" alt="" class="repres-img">
-						<div class="repres-box-marker">
-							<a href="tel:375173775000" class="repres-marker-link"> <span>
-									+375 (17)377-50-00
-								</span></a>
-							<div class="repres-marker "></div>
-							Брест
-						</div>
 		
-						<div class="repres-box-marker repres-box-marker-2">
-							<a href="tel:375173775000" class="repres-marker-link"> <span>
-									+375 (17)377-50-00
-								</span></a>
-							<div class="repres-marker "></div>
-							Гродно
-						</div>
 		
-						<div class="repres-box-marker  repres-box-marker-3">
-							<a href="tel:375173775000" class="repres-marker-link"> <span>
-									+375 (17)377-50-00
-								</span></a>
-							<div class="repres-marker "></div>
-							Минск
-						</div>
-		
-						<div class="repres-box-marker --active  repres-box-marker-4">
-							<a href="tel:375173775000"
-								class="repres-marker-link repres-box-marker-position-2 repres-marker-link-right">
-								<span>
-									+375 (17)377-50-00
-								</span>
-							</a>
-							<div class="repres-marker "></div>
-							Могилев
-						</div>
-		
-						<div class="repres-box-marker  repres-box-marker-5">
-							Гомель
-							<a href="tel:375173775000"
-								class="repres-marker-link repres-box-marker-position repres-marker-link-right ">
-								<span>
-									+375 (17)377-50-00
-								</span>
-							</a>
-							<div class="repres-marker "></div>
-						</div>
-		
-						<div class="repres-box-marker  repres-box-marker-6 ">
-							Витебск
-							<a href="tel:375173775000"
-								class="repres-marker-link repres-box-marker-position repres-marker-link-right">
-								<span>
-									+375 (17)377-50-00
-								</span>
-		
-							</a>
-							<div class="repres-marker "></div>
-		
-						</div>
-		
-					</div>
 				</div>
 			</div>
 		</section>
@@ -614,8 +668,12 @@
 			<div class="container company-container">
 				<div class="company-wrap">
 					<div class="company-coll">
-						<div class="company-box-img">
-							<img src="./assets/img/company-img.webp" alt="" class="company-img">
+						<div class="company-box-img gallery">
+							<a href="./assets/img/company/company-1.webp" class="company-galery-img">
+								<img src="./assets/img/company-img.webp" alt="" class="company-img">
+							</a>
+							<a href="./assets/img/company/company-2.webp" class="company-galery-img">
+							</a>
 						</div>
 						<div class="company-page">
 							<h3 class="company-title">
@@ -717,6 +775,7 @@
 				</div>
 			</div>
 		</section>
+		<!--
 		<section class="partners partners-padding">
 			<div class="container partners-container">
 				<div class="partners-wrapp">
@@ -898,8 +957,9 @@
 					d="M20.7678 1.23223C19.7915 0.255922 18.2085 0.255922 17.2322 1.23223L1.32233 17.1421C0.346019 18.1184 0.346019 19.7014 1.32233 20.6777C2.29864 21.654 3.88155 21.654 4.85786 20.6777L19 6.53553L33.1421 20.6777C34.1184 21.654 35.7014 21.654 36.6777 20.6777C37.654 19.7014 37.654 18.1184 36.6777 17.1421L20.7678 1.23223ZM21.5 5L21.5 3L16.5 3L16.5 5L21.5 5Z"
 					fill="white" />
 			</svg>
-		</a>
+		</a>-->
 	</div>
+	<div class="fon"></div>
 	
 	<script src="assets/js/app.min.js"></script>
 </body>
