@@ -6,6 +6,11 @@
 //= components/slick.min.js
 //= components/jquery.magnific-popup.min.js
 $(function () {
+	// анимация
+	AOS.init({
+		duration: 1150,
+		once: true
+	});
 	// скролл
 	$(".scroll-link").click(function () {
 		var target = $(this).attr('href');
@@ -144,11 +149,33 @@ $(function () {
 		rows: 0,
 		responsive: [
 			{
-				breakpoint: 100,
+				breakpoint: 1400,
 				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1,
-					dots: false
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 1080,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+			,
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			}
+			,
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
 				}
 			}
 		]
