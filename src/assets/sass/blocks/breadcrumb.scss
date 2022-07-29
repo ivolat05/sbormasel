@@ -1,7 +1,12 @@
+.breadcrumb-padding {
+	padding-top: 40px;
+}
+
 .breadcrumb-list-inner+.breadcrumb-list-inner:before {
 	content: "|";
-	padding-left: 15px;
-	padding-right: 15px;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .breadcrumb-list-link {

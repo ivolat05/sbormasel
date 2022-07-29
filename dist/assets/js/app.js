@@ -358,4 +358,24 @@ $(function () {
 	}
 
 	closePopup('video-close');
+	//advant-slaider
+	$(".advant-slaider").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: true,
+		infinite: true,
+		arrows: false,
+		rows: 0,
+		responsive: [
+			{
+				breakpoint: 120,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					dots: false
+				}
+			}
+		]
+	});
+
 })

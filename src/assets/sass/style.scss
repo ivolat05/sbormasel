@@ -71,6 +71,28 @@ input.error {
 	overflow: hidden;
 }
 
+.btn-link {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 120%;
+	color: #9EC419;
+
+	display: flex;
+	align-items: center;
+
+	.btn-link-svg {
+		margin-left: 28px;
+		transition: all .4s;
+	}
+
+	&:hover {
+		.btn-link-svg {
+			margin-left: 40px;
+		}
+	}
+}
 
 /* bootstrap */
 @import "../../../node_modules/bootstrap/scss/functions";
@@ -109,6 +131,18 @@ input.error {
 	.news-container {
 		max-width: 1450px;
 	}
+
+	.breadcrumb-container {
+		max-width: 1450px;
+	}
+
+	.main-container-service {
+		max-width: 1437px;
+	}
+
+	.advant-container {
+		max-width: 1450px;
+	}
 }
 
 @media(min-width:992px) {
@@ -120,6 +154,33 @@ input.error {
 @media(min-width:1580px) {
 	.company-container {
 		max-width: 1732px;
+	}
+}
+
+/*- slaider-*/
+.slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 20px;
+
+	button {
+		font-size: 0;
+		width: 5px;
+		height: 5px;
+		border-radius: 5px;
+		background: #C4C4C4;
+		margin-right: 6px;
+		margin-left: 6px;
+		flex-shrink: 0;
+		border: none;
+		padding: 0;
+	}
+
+	.slick-active {
+		button {
+			background: #7EA100;
+		}
 	}
 }
 
@@ -144,7 +205,7 @@ input.error {
 /*-service-*/
 
 @import "../sass/blocks/breadcrumb.scss";
-
+@import "../sass/blocks/advant.scss";
 
 
 
