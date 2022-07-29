@@ -1,0 +1,22 @@
+.cods-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cods-coll {
+	width: 59%;
+}
+
+.cods-table-row {
+	display: flex;
+	justify-content: space-between;
+
+	&:nth-child(2n+2) {
+		background: #F5F5F5;
+	}
+}
+
+.cods-form {
+	width: 41%;
+	position: relative;
+}
