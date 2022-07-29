@@ -143,6 +143,10 @@ input.error {
 	.advant-container {
 		max-width: 1450px;
 	}
+
+	.conditions-container {
+		max-width: 1450px;
+	}
 }
 
 @media(min-width:992px) {
@@ -206,7 +210,7 @@ input.error {
 
 @import "../sass/blocks/breadcrumb.scss";
 @import "../sass/blocks/advant.scss";
-
+@import "../sass/blocks/conditions.scss";
 
 
 @import "../sass/blocks/adaptive.scss";

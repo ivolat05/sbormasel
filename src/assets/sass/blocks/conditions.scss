@@ -1,0 +1,54 @@
+.conditions {
+	background: #7EA007;
+}
+
+.conditions-padding {
+	padding-top: 98px;
+	padding-bottom: 60px;
+}
+
+.conditions-title {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 120%;
+	color: #FFFFFF;
+	padding-bottom: 43px;
+}
+
+.conditions-list {
+	width: 50%;
+}
+
+.conditions-list-inner {
+	display: flex;
+	justify-content: start;
+	padding-bottom: 40px;
+}
+
+.conditions-num {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #9EC419;
+	width: 60px;
+	height: 60px;
+	flex-shrink: 0;
+	margin-right: 25px;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+	color: #FFFFFF;
+}
+
+.conditions-text {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	color: #FFFFFF;
+}
