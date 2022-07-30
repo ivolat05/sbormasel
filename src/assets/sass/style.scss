@@ -155,6 +155,10 @@ input.error {
 	.additional-container {
 		max-width: 1450px;
 	}
+
+	.seminars-container {
+		max-width: 1450px;
+	}
 }
 
 @media(min-width:992px) {
@@ -223,5 +227,8 @@ input.error {
 
 /*-cooperation-*/
 @import "../sass/blocks/additional.scss";
+@import "../sass/blocks/seminars.scss";
+@import "../sass/blocks/certificate.scss";
+
 
 @import "../sass/blocks/adaptive.scss";

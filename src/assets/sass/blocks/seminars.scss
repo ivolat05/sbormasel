@@ -1,0 +1,79 @@
+.seminars {
+	background: #9EC419;
+}
+
+.seminars-title {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 120%;
+	color: #FFFFFF;
+	padding-bottom: 20px;
+}
+
+.seminars-text {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 120%;
+	color: #FFFFFF;
+	padding-bottom: 38px;
+}
+
+.seminars-list-padding {
+	padding-bottom: 63px;
+}
+
+.seminars-list-inner {
+	padding-left: 23px;
+	position: relative;
+
+	&::before {
+		content: '';
+		width: 3px;
+		height: 3px;
+		position: absolute;
+		border-radius: 3px;
+		background: #fff;
+		left: 10px;
+		top: 10px;
+	}
+}
+
+.seminars-list-text {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #FFFFFF;
+}
+
+.seminars-wrapp {
+	display: flex;
+	justify-content: space-between;
+}
+
+.seminars-coll-1,
+.seminars-coll-2 {
+	width: 640px;
+}
+
+.seminars-coll-2 {
+	margin-right: 7px;
+}
+
+.seminars-img {
+	width: 100%;
+}
+
+.seminars-padding {
+	padding-top: 100px;
+	padding-bottom: 42px;
+}
+
+.seminars-img {
+	margin-bottom: 55px;
+}
