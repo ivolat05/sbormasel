@@ -159,6 +159,14 @@ input.error {
 	.seminars-container {
 		max-width: 1450px;
 	}
+
+	.certificate-container {
+		max-width: 1450px;
+	}
+
+	.articles-container {
+		max-width: 1450px;
+	}
 }
 
 @media(min-width:992px) {
@@ -230,5 +238,7 @@ input.error {
 @import "../sass/blocks/seminars.scss";
 @import "../sass/blocks/certificate.scss";
 
+/*-News-*/
+@import "../sass/blocks/articles.scss";
 
 @import "../sass/blocks/adaptive.scss";

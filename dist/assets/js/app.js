@@ -378,4 +378,14 @@ $(function () {
 		]
 	});
 
+	// certificate-slaider
+	$(".certificate-slaider").slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		dots: true,
+		infinite: true,
+		arrows: false,
+		rows: 0,
+
+	});
 })

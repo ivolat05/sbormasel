@@ -1,0 +1,140 @@
+.articles-title {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 120%;
+	color: #252525;
+	padding-bottom: 40px;
+
+	span {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 120%;
+		color: #9EC419;
+	}
+}
+
+.articles-padding {
+	padding-bottom: 96px;
+}
+
+.articles-wrapp {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	gap: 20px;
+	padding-bottom: 79px;
+
+}
+
+.articles-box.--head {
+	width: 49%;
+}
+
+
+
+.articles-box {
+	width: 32.20%;
+	margin-bottom: 20px;
+}
+
+.articles-img {
+	width: 100%;
+	height: 318px;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.articles-data {
+	display: block;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 120%;
+	padding-bottom: 16px;
+	color: #D5D5D5;
+}
+
+.articles-link {
+	display: block;
+	text-align: right;
+}
+
+.articles-box-title {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 120%;
+
+	color: #252525;
+	padding-bottom: 10px;
+}
+
+.articles-box-text {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 120%;
+	color: #252525;
+	padding-bottom: 8px;
+}
+
+.articles-link {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 120%;
+	color: #9EC419;
+	transition: .4s;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.navigation-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3px;
+}
+
+.navigation-list-link {
+	height: 40px;
+	min-width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	color: #252525;
+	transition: .4s;
+
+	.navigation-list-path {
+		transition: .4s;
+	}
+
+	&:hover {
+		background: #7EA007;
+		color: #fff;
+
+		.navigation-list-path {
+			stroke: #fff;
+		}
+	}
+}
+
+.navigation-list-link.--active {
+	background: #7EA007;
+	color: #fff;
+}
