@@ -167,6 +167,14 @@ input.error {
 	.articles-container {
 		max-width: 1450px;
 	}
+
+	.content-container {
+		max-width: 1450px;
+	}
+
+	.maps-container {
+		max-width: 1450px;
+	}
 }
 
 @media(min-width:992px) {
@@ -240,5 +248,10 @@ input.error {
 
 /*-News-*/
 @import "../sass/blocks/articles.scss";
+@import "../sass/blocks/content.scss";
+
+
+/*-contacts-*/
+@import "../sass/blocks/maps.scss";
 
 @import "../sass/blocks/adaptive.scss";
