@@ -1717,3 +1717,162 @@
 		width: 70%;
 	}
 }
+
+/*-contacts-*/
+@media(max-width:1450px) {
+	.main-text-contacts {
+		width: 44%;
+	}
+}
+
+@media(max-width:1440px) {
+	.main-coll-contacts {
+		left: 28px;
+
+		&::after {
+			left: -100px;
+		}
+
+		&::before {
+			left: -75px;
+		}
+	}
+
+	.main-img-contacts {
+		right: 50px;
+	}
+}
+
+@media(max-width:1200px) {
+	.main-img-contacts {
+		right: 10px;
+	}
+
+	.main-text-contacts {
+		width: 40%;
+	}
+}
+
+@media(max-width:992px) {
+	.main-text-contacts {
+		width: 100%;
+	}
+
+	.main-box-img-contacts {
+		display: none;
+	}
+
+	.main-coll-contacts {
+		left: 0;
+		padding-right: 20px;
+		padding-bottom: 0;
+	}
+}
+
+/*-map-*/
+@media(max-width:1200px) {
+	.maps-coll {
+		width: 30%;
+	}
+
+	.maps-box {
+		width: 65%;
+	}
+}
+
+@media(max-width:992px) {
+	.maps-coll {
+		width: 100%;
+		padding-bottom: 14px;
+	}
+
+	.maps-box {
+		width: 100%;
+	}
+
+	.maps-row {
+		display: block;
+		margin-bottom: 32px;
+	}
+
+	.maps-container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.maps-title {
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 120%;
+		text-align: center;
+	}
+
+	.maps-link {
+		text-align: center;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 120%;
+	}
+
+	.maps-padding {
+		padding-top: 39px;
+		padding-bottom: 20px;
+	}
+
+
+
+}
+
+@media(max-width:572px) {
+	.map {
+		height: 200px;
+	}
+
+
+	.ymaps-2-1-79-zoom {
+		top: -47px;
+		left: 12px;
+		width: 38px !important;
+		height: 18px !important;
+		background: #fff !important;
+		opacity: 1 !important;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+		border-radius: 8px;
+		overflow: hidden;
+
+	}
+
+	.ymaps-2-1-79-zoom__button {
+		background: #fff !important;
+		border: none !important;
+		box-shadow: none !important;
+
+	}
+
+	.ymaps-2-1-79-zoom__button {
+		position: absolute !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+		width: 100%;
+		height: 40px !important;
+	}
+
+	.ymaps-2-1-79-zoom__icon {
+		left: 50% !important;
+	}
+
+	.ymaps-2-1-79-zoom__plus .ymaps-2-1-79-zoom__icon {
+		background-image: url('../../assets/img/icon-map.svg') !important;
+	}
+
+	.ymaps-2-1-79-zoom__minus .ymaps-2-1-79-zoom__icon {
+		background-image: url('../../assets/img/icon-map-2.svg') !important;
+	}
+
+	.ymaps-2-1-79-zoom__icon {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
