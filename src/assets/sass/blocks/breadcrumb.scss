@@ -9,14 +9,21 @@
 	padding-right: 10px;
 }
 
+.breadcrumb-list {
+	overflow: hidden;
+}
+
 .breadcrumb-list-link {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
 	text-decoration-line: underline;
 	color: #252525;
+	display: contents;
 
 }
+
+
 
 .breadcrumb-list-inner {
 	display: inline;
@@ -26,4 +33,6 @@
 	font-size: 16px;
 	line-height: 18px;
 	color: #C4C4C4;
+	display: contents;
+	white-space: nowrap;
 }
