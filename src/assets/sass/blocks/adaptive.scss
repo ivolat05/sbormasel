@@ -2111,3 +2111,126 @@
 		margin: 10px;
 	}
 }
+
+/*-articles-*/
+@media(max-width:1440px) {
+	.articles-box {
+		width: 32%;
+	}
+}
+
+@media(max-width:1200px) {
+	.articles-box.--head {
+		width: 48%;
+	}
+
+	.articles-box {
+		width: 31%;
+	}
+}
+
+@media(max-width:992px) {
+	.articles-wrapp {
+		display: block;
+	}
+
+	.articles-box {
+		display: none;
+	}
+
+	.articles-box.--head {
+		width: 100%;
+		display: block;
+	}
+
+	.articles-box-text {
+		display: none;
+	}
+
+	.articles-title {
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 120%;
+		text-align: center;
+		padding-bottom: 32px;
+
+		span {
+			font-family: 'Gilroy';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 120%;
+		}
+	}
+
+	.articles-data {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 120%;
+		padding-bottom: 7px;
+	}
+
+	.articles-box-title {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 120%;
+	}
+
+	.articles-wrapp {
+		padding-bottom: 0;
+	}
+
+	.navigation-list-link {
+		min-width: 30px;
+		height: 30px;
+		font-family: 'Gilroy';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 120%;
+	}
+
+	.articles-padding {
+		padding-bottom: 45px;
+	}
+}
+
+@media(max-width:572px) {
+	.articles-img {
+		height: 152px;
+		margin-bottom: 7px;
+	}
+}
+
+/*-news-news-*/
+@media(max-width:992px) {
+	.news-title-span-fix {
+		display: inline-block !important;
+	}
+
+	.news-col-news {
+		padding-bottom: 17px;
+	}
+
+	.news-padding-news {
+		padding-bottom: 57px;
+	}
+
+	.job-news {
+		padding-top: 40px;
+
+	}
+}
+
+/*-form-one-news-*/
+@media(max-width:992px) {
+	.forms-back-news {
+		height: 313px;
+	}
+
+	.forms-one-news {
+		padding-bottom: 58px;
+	}
+}
