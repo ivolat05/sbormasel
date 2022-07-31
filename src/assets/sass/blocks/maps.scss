@@ -43,3 +43,54 @@
 	display: block;
 
 }
+
+.map {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	filter: grayscale(100%);
+}
+
+// стилизация кнопок zoom
+.ymaps-2-1-79-zoom {
+	width: 40px !important;
+	height: 18px !important;
+	background: #fff !important;
+	opacity: 1 !important;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+	border-radius: 8px;
+	overflow: hidden;
+
+}
+
+.ymaps-2-1-79-zoom__button {
+	background: #fff !important;
+	border: none !important;
+	box-shadow: none !important;
+
+}
+
+.ymaps-2-1-79-zoom__button {
+	position: absolute !important;
+	left: 50% !important;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 40px !important;
+}
+
+.ymaps-2-1-79-zoom__icon {
+	left: 50% !important;
+}
+
+.ymaps-2-1-79-zoom__plus .ymaps-2-1-79-zoom__icon {
+	background-image: url('../../assets/img/icon-map.svg') !important;
+}
+
+.ymaps-2-1-79-zoom__minus .ymaps-2-1-79-zoom__icon {
+	background-image: url('../../assets/img/icon-map-2.svg') !important;
+}
+
+.ymaps-2-1-79-zoom__icon {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
