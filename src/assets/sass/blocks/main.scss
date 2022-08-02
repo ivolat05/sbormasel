@@ -1,0 +1,181 @@
+.main-padding {
+	padding-top: 50px;
+	padding-bottom: 16px;
+}
+
+.main-title {
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 69px;
+	color: #252525;
+
+	span {
+		font-weight: 700;
+		color: #9EC419;
+	}
+
+	padding-bottom: 13px;
+}
+
+
+.main-link {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #414141;
+	padding-right: 13px;
+	margin-right: 18px;
+	border-right: 1px solid #414141;
+
+	&:nth-last-child(1) {
+		border: none;
+		margin-right: 0;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.main-text {
+	font-weight: 700;
+	color: #9EC419;
+}
+
+.main-wrapp {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.main-coll {
+	left: 105px;
+	position: relative;
+	padding-top: 90px;
+
+	&::after {
+		content: url('../../assets/img/main/main-logo.svg');
+		position: absolute;
+		left: -153px;
+		top: 42%;
+		transform: translateY(-50%);
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 458px;
+		height: 364px;
+		top: 25px;
+		z-index: -1;
+		left: -120px;
+		border: 21px solid rgba(230, 240, 232, 0.47);
+
+	}
+}
+
+.main-img {
+	width: auto;
+	height: auto;
+}
+
+.main-box {
+	padding-bottom: 20px;
+	padding-bottom: 41px;
+}
+
+.main-coll-service {
+	left: 95px;
+	padding-top: 98px;
+
+	&::before {
+		width: 105%;
+		height: 85%;
+		left: -105px;
+	}
+
+	&::after {
+		left: -134px;
+		top: 45%;
+	}
+}
+
+.main-service-text {
+	width: 70%;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 120%;
+	color: #252525;
+	padding-top: 18px;
+	padding-bottom: 29px;
+}
+
+.main-padding-service {
+	padding-bottom: 130px;
+}
+
+/*-main-coll-news-*/
+.main-coll-news {
+	&::before {
+		height: 100%;
+	}
+
+	&::after {
+		top: 54%;
+	}
+}
+
+.main-title-news {
+	width: 80%;
+	padding-bottom: 40px;
+}
+
+.main-data {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 120%;
+	color: #C4C4C4;
+	display: block;
+	padding-bottom: 50px;
+}
+
+.main-padding-news {
+	padding-bottom: 160px;
+}
+
+/*-main-contacts-*/
+.main-box-img-contacts {
+	position: relative;
+}
+
+.main-img-contacts {
+	position: absolute;
+	right: 83px;
+	top: -52px;
+	width: 525px;
+	height: 479px;
+}
+
+.main-coll-contacts {
+	left: 93px;
+
+	&::before {
+		width: 100%;
+		height: 100%;
+		left: -100px;
+	}
+
+	&::after {
+		left: -134px;
+		top: 58%;
+	}
+}
+
+.main-text-contacts {
+	width: 42%;
+	padding-bottom: 45px;
+}
