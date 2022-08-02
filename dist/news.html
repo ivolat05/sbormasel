@@ -379,7 +379,21 @@
 	</style>
 	
 	
-	<link rel="stylesheet" href="assets/css/style-news.min.css">
+	
+	<noscript>
+		<link rel="stylesheet" href="assets/css/style-news.min.css">
+	</noscript>
+	<script type="text/javascript">
+		/* CSS #1 */
+		var giftofspeed = document.createElement('link');
+		giftofspeed.rel = 'stylesheet';
+		giftofspeed.href = 'assets/css/style-news.min.css';
+		giftofspeed.type = 'text/css';
+		var godefer = document.getElementsByTagName('link')[0];
+		godefer.parentNode.insertBefore(giftofspeed, godefer);
+	
+	</script>
+	<link rel="stylesheet" href="assets/css/style-adaptive.min.css">
 </head>
 
 <body>

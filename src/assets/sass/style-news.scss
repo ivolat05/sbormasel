@@ -102,92 +102,7 @@ input.error {
 
 
 
-@media(min-width:1400px) {
-	.container {
-		max-width: 1420px;
-	}
 
-	.header-container,
-	.footer-container {
-		max-width: 1885px;
-	}
-
-	.job-container {
-		max-width: 1458px;
-	}
-
-	.repres-container {
-		max-width: 1486px;
-	}
-
-	.company-container {
-		max-width: 100%;
-	}
-
-	.partners-container {
-		max-width: 1439px;
-	}
-
-	.news-container {
-		max-width: 1450px;
-	}
-
-	.breadcrumb-container {
-		max-width: 1450px;
-	}
-
-	.main-container-service {
-		max-width: 1437px;
-	}
-
-	.advant-container {
-		max-width: 1450px;
-	}
-
-	.conditions-container {
-		max-width: 1450px;
-	}
-
-	.cods-container {
-		max-width: 1455px;
-	}
-
-	.additional-container {
-		max-width: 1450px;
-	}
-
-	.seminars-container {
-		max-width: 1450px;
-	}
-
-	.certificate-container {
-		max-width: 1450px;
-	}
-
-	.articles-container {
-		max-width: 1450px;
-	}
-
-	.content-container {
-		max-width: 1450px;
-	}
-
-	.maps-container {
-		max-width: 1450px;
-	}
-}
-
-@media(min-width:992px) {
-	.company-container {
-		max-width: 100%;
-	}
-}
-
-@media(min-width:1580px) {
-	.company-container {
-		max-width: 1732px;
-	}
-}
 
 /*- slaider-*/
 .slick-dots {
@@ -232,7 +147,3 @@ input.error {
 /*-News-*/
 @import "../sass/blocks/articles.scss";
 @import "../sass/blocks/content.scss";
-
-
-
-@import "../sass/blocks/adaptive.scss";
