@@ -101,94 +101,6 @@ input.error {
 @import "../../../node_modules/bootstrap/scss/containers";
 
 
-
-@media(min-width:1400px) {
-	.container {
-		max-width: 1420px;
-	}
-
-	.header-container,
-	.footer-container {
-		max-width: 1885px;
-	}
-
-	.job-container {
-		max-width: 1458px;
-	}
-
-	.repres-container {
-		max-width: 1486px;
-	}
-
-	.company-container {
-		max-width: 100%;
-	}
-
-	.partners-container {
-		max-width: 1439px;
-	}
-
-	.news-container {
-		max-width: 1450px;
-	}
-
-	.breadcrumb-container {
-		max-width: 1450px;
-	}
-
-	.main-container-service {
-		max-width: 1437px;
-	}
-
-	.advant-container {
-		max-width: 1450px;
-	}
-
-	.conditions-container {
-		max-width: 1450px;
-	}
-
-	.cods-container {
-		max-width: 1455px;
-	}
-
-	.additional-container {
-		max-width: 1450px;
-	}
-
-	.seminars-container {
-		max-width: 1450px;
-	}
-
-	.certificate-container {
-		max-width: 1450px;
-	}
-
-	.articles-container {
-		max-width: 1450px;
-	}
-
-	.content-container {
-		max-width: 1450px;
-	}
-
-	.maps-container {
-		max-width: 1450px;
-	}
-}
-
-@media(min-width:992px) {
-	.company-container {
-		max-width: 100%;
-	}
-}
-
-@media(min-width:1580px) {
-	.company-container {
-		max-width: 1732px;
-	}
-}
-
 /*- slaider-*/
 .slick-dots {
 	display: flex;
@@ -219,8 +131,7 @@ input.error {
 /* blocks */
 
 /*-index-*/
-@import "../sass/blocks/header.scss";
-@import "../sass/blocks/main.scss";
+
 @import "../sass/blocks/forms.scss";
 @import "../sass/blocks/slider-tooltips.scss";
 @import "../sass/blocks/services.scss";
@@ -233,25 +144,3 @@ input.error {
 @import "../sass/blocks/news.scss";
 @import "../sass/blocks/footer.scss";
 @import "../sass/blocks/popup-video.scss";
-
-/*-service-*/
-
-@import "../sass/blocks/breadcrumb.scss";
-@import "../sass/blocks/advant.scss";
-@import "../sass/blocks/conditions.scss";
-@import "../sass/blocks/cods.scss";
-
-/*-cooperation-*/
-@import "../sass/blocks/additional.scss";
-@import "../sass/blocks/seminars.scss";
-@import "../sass/blocks/certificate.scss";
-
-/*-News-*/
-@import "../sass/blocks/articles.scss";
-@import "../sass/blocks/content.scss";
-
-
-/*-contacts-*/
-@import "../sass/blocks/maps.scss";
-
-@import "../sass/blocks/adaptive.scss";

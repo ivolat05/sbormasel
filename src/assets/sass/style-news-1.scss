@@ -100,6 +100,7 @@ input.error {
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/containers";
 
+
 /*- slaider-*/
 .slick-dots {
 	display: flex;
@@ -128,17 +129,14 @@ input.error {
 }
 
 /* blocks */
-@import "../sass/blocks/header.scss";
-@import "../sass/blocks/breadcrumb.scss";
-@import "../sass/blocks/main.scss";
+
+/*-index-*/
+
 @import "../sass/blocks/forms.scss";
+
 @import "../sass/blocks/job.scss";
-@import "../sass/blocks/slider-tooltips.scss";
-@import "../sass/blocks/news.scss";
 @import "../sass/blocks/footer.scss";
+@import "../sass/blocks/slider-tooltips.scss";
 
-
-
-/*-News-*/
-@import "../sass/blocks/articles.scss";
+@import "../sass/blocks/breadcrumb.scss";
 @import "../sass/blocks/content.scss";
