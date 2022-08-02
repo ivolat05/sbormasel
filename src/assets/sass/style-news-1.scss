@@ -131,45 +131,6 @@ input.error {
 /* blocks */
 
 /*-index-*/
-/*-forms-one-news-*/
-.forms-back-news {
-	height: 54%;
-}
-
-.forms-one-news {
-	padding-bottom: 110px;
-}
-
-/*-main-coll-news-*/
-.main-coll-news {
-	&::before {
-		height: 100%;
-	}
-
-	&::after {
-		top: 54%;
-	}
-}
-
-.main-title-news {
-	width: 80%;
-	padding-bottom: 40px;
-}
-
-.main-data {
-	font-family: 'Gilroy';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 120%;
-	color: #C4C4C4;
-	display: block;
-	padding-bottom: 50px;
-}
-
-.main-padding-news {
-	padding-bottom: 160px;
-}
 
 @import "../sass/blocks/forms.scss";
 
