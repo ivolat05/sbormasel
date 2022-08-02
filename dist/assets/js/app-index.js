@@ -131,28 +131,7 @@ $(function () {
 	$('.mask-tell').inputmask("+375 (99)999-99-99");
 
 
-	// cslaider
-	$(".nlaider").slick({
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		dots: false,
-		infinite: true,
-		arrows: true,
 
-		nextArrow: $(".block__slick-next"),
-		prevArrow: $(".block__slick-prev"),
-
-		responsive: [
-			{
-				breakpoint: 1200,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 1,
-					dots: false
-				}
-			}
-		]
-	});
 
 	$(".news-slaider").slick({
 		slidesToShow: 3,
