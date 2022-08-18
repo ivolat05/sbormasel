@@ -101,8 +101,6 @@ input.error {
 @import "../../../node_modules/bootstrap/scss/containers";
 
 
-
-
 /*- slaider-*/
 .slick-dots {
 	display: flex;
@@ -130,16 +128,19 @@ input.error {
 	}
 }
 
-/* blocks */
 
 /*-index-*/
 
-
-
-@import "../sass/blocks/breadcrumb.scss";
-@import "../sass/blocks/partners.scss";
+@import "../sass/blocks/forms.scss";
 @import "../sass/blocks/footer.scss";
-/*-cooperation-*/
-@import "../sass/blocks/additional.scss";
-@import "../sass/blocks/seminars.scss";
-@import "../sass/blocks/certificate.scss";
+@import "../sass/blocks/slider-tooltips.scss";
+/*-service-*/
+@import "../sass/blocks/breadcrumb.scss";
+@import "../sass/blocks/about.scss";
+
+
+@media(min-width: 1400px) {
+	.about-container {
+		max-width: 1452px !important;
+	}
+}
